@@ -103,52 +103,364 @@ li {
   width: 86%; 
   margin: 0 auto;
 }
-/*=================================
-  Header styling starts here
-=================================*/
 
-
-
-
-
-
-/*=================================
-  Header styling ends here
-=================================*/  
 
 /*=================================
   main styling starts here
 =================================*/
+.funfoods {
+  box-sizing: border-box;
+  width: 350px; 
+  height: 90vh;
+  border: 2px solid #000;
+  margin: 2vh auto;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  background: url("/assets/images/bg.jpg");
+  background-size: cover;
+}
 
+.logo {
+  width: auto;
+  height: 50px;
+  margin: 32px 0;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
 
+.table {
+  position: absolute;
+  bottom: 0;
+  opacity: 1;
+  animation: table-animation 1s ease-in-out;
+  z-index: 1;
+}
 
+@keyframes table-animation {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
 
+.plate {
+  position: absolute;
+  bottom: 15px;
+  left: -350px;
+  z-index: 2;
+  animation: plate-animation 3.3s ease-in-out .5s alternate forwards;
+ }
 
+ @keyframes plate-animation {
+  0% { left: -320px; }
+  25% { left: -60px; }
+  75% { left: -60px; }
+  100% { left: -350px; }
+}
 
+.headlines {
+  position: absolute;
+  top: 130px;
+  left: -270px;
+  color: rgb(224, 2, 2);
+  font-size: 35px;
+  font-family: Georgia, Times, 'Times New Roman', serif;
+  text-align: center;
+  z-index: 2;
+}
 
+.heading1 { animation: heading1-animation 3s ease-in-out 1s alternate forwards; }
+  
+
+span { display: block; }
+
+@keyframes heading1-animation {
+  0% { left: -270px; }
+  25% { left: 90px; }
+  85% { left: 90px; }
+  100% { left: -270px; }
+}
+
+.sad_sonali {
+  width: auto;
+  height: 250px;
+  position: absolute;
+  right: -250px;
+  bottom: 98px;
+  z-index: 2;
+  animation: sonali-sad 2.8s ease-in-out  1s alternate forwards;
+}
+
+@keyframes sonali-sad {
+  0% { right: -250px; }
+  25% { right: 0px; }
+  85% { right: 0px; }
+  100%{ right: -250px; }
+}
+
+.sandwich_1 {
+  width: auto;
+  height: 70px;
+  position: absolute;
+  bottom: 30px;
+  left: -320px;
+  z-index: 2;
+  animation: sandwich1-animation 10s ease-in-out 3s alternate forwards;
+}
+
+@keyframes sandwich1-animation {
+  0% { left: -320px; }
+  10% { left: -32px; }
+  90% { left: -32px; }
+  100% { left: -320px; }
+}
+
+.sandwich_2 {
+  width: auto;
+  height: 38px;
+  position: absolute;
+  bottom: 49px;
+  left: -280px;
+  z-index: 2;
+  animation: sandwich2-animation 10s ease-in-out 3s alternate forwards;
+}
+
+@keyframes sandwich2-animation {
+  0% { left: -280px; }
+  10% { left: 10px; }
+  90% { left: 10px; }
+  100% { left: -280px; }
+}
+
+.mayo {
+  width: auto;
+  height: 38px;
+  position: absolute;
+  bottom: 59px;
+  left: -288px;
+  opacity: 0;
+  z-index: 3;
+  animation: mayo-animation 10s ease-in-out 3s alternate forwards;
+}
+
+@keyframes mayo-animation {
+  0% { left: -288px; }
+  10% { left: 5px; }
+  20% {opacity: 0; }
+  25% { opacity: 1; }
+
+  90% {
+    left: 5px;
+    opacity: 1;
+  }
+
+  100% {
+    left: -288px;
+    opacity: 1;
+  }
+}
+
+ .sandwich_3 {
+  width: auto;
+  height: 42px;
+  position: absolute;
+  bottom: 60px;
+  left: -282px;
+  z-index: 5;
+  animation: sandwich3-animation 10s ease-in-out 2.9s alternate forwards;
+}
+
+@keyframes sandwich3-animation {
+  0% { left: -282px; }
+  
+  10% {
+    left: 7px;
+    bottom: 60px;
+  }
+
+  25% { bottom: 100px; }
+  30% { bottom: 100px; }
+
+  35% {
+    bottom: 65px;
+    left: 8px;
+  }
+
+  90% {
+    bottom: 65px;
+    left: 8px;
+  }
+
+  100% {
+    bottom: 65px;
+    left: -282px;
+  }
+} 
+
+.knife {
+  width: auto;
+  height: 40px;
+  position: absolute;
+  bottom: 75px;
+  left: 25px;
+  opacity: 0;
+  transform: rotate(-60deg);
+  z-index: 6;
+  animation: knife-animation 1s linear 5s alternate forwards;
+}
+
+ @keyframes knife-animation {
+  0% {
+    bottom: 75px;
+    left: 25px;
+    opacity: 0;
+  }
+
+  5% { opacity: 1; }
+  95% { opacity: 1; }
+
+  100% {
+    bottom: 55px;
+    left: 100px;
+    opacity: 0;
+  }
+} 
+
+.heading2 { animation: heading2-animation  3.5s ease-in-out 6s alternate forwards; }
+
+@keyframes heading2-animation {
+  0% { left: -270px; }
+  25% { left: 60px; }
+  85% {left: 60px; }
+  100% { left: -270px; }
+}
+
+.happy_sonali {
+  width: auto;
+  height: 250px;
+  position: absolute;
+  right: -250px;
+  bottom: 105px;
+  z-index: 2;
+  animation: sonali-happy 3.5s ease-in-out 6s alternate forwards;
+}
+
+@keyframes sonali-happy {
+  0% { right: -250px; }
+  25% { right: 0px; }
+  85% { right: 0px; }
+  100% {right: -250px; }
+}
+
+.heading3 {
+  left: -350px;
+  animation: heading3-animation 3.5s ease-in-out 9s alternate forwards;
+}
+
+@keyframes heading3-animation {
+  0% { left: -350px; }
+  25% { left: 15px; }
+  85% { left: 15px; }
+  100% { left: -350px; }
+}
+
+.chef {
+  width: auto;
+  height: 250px;
+  position: absolute;
+  right: -250px;
+  bottom: 105px;
+  z-index: 2;
+  animation: chef-animation 3.5s ease-in-out 9s alternate forwards;
+}
+
+@keyframes chef-animation {
+  0% { right: -250px; }
+  25% { right: 0px; }
+  85% { right: 0px; }
+  100% { right: -250px; }
+}
+
+.heading4 { animation: heading4-animation 1s ease-in-out 12.5s forwards; }
+
+@keyframes heading4-animation {
+  0% { left: -270px; }
+  100% { left: 70px; }
+}
+
+.veg_mayo {
+  width: auto;
+  height: 180px;
+  position: absolute;
+  right: -250px;
+  bottom: 25px;
+  z-index: 2;
+  animation: vegmayo-animation 2s ease-in-out 12.5s forwards ;
+}
+
+@keyframes vegmayo-animation {
+  0% { right: -250px; }
+  100% { right: 100px; }
+}
+
+.hat {
+  width: auto;
+  height: 128px;
+  position: absolute;
+  bottom: 400px;
+  left: -250px;
+  z-index: 3;
+  animation: hat-animation 2s ease-in-out 14s forwards;
+}
+
+@keyframes hat-animation {
+  0% { right: -250px; }
+  
+  35% {
+    bottom: 248px;
+    left: 107px;
+  }
+
+  100% {
+    bottom: 150px;
+    left: 150px;
+  }
+}
+
+.get_recipe {
+  width: auto;
+  padding: 10px 25px;
+  border-radius: 10px;
+  position: absolute;
+  top: 140px;
+  left: -220px;
+  background: darkblue;
+  color: white;
+  font-size: 20px;
+  z-index: 3;
+  animation: recipe-animation 0.5s ease-in-out 16s forwards ;
+}
+
+@keyframes recipe-animation {
+  0% {
+    top: 140px;
+    left: -220px;
+  }
+
+  100% {
+    top: 220px;
+    left: 85px;
+  }
+}
 
 /*=================================
   main styling ends here
 =================================*/
 
-/*=================================
-  footer styling starts here
-=================================*/ 
 
 
 
 
 
 
-
- /*=================================
-  footer styling ends here
-=================================*/ 
-
-/*media query starts*/
-/*media query for 995px starts here*/
-@media only screen and (max-width: 995px) {
-
-
-
-}  
+ 
